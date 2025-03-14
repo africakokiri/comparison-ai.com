@@ -4,7 +4,11 @@ import "@/styles/globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: ""
+  title: "Comparison AI",
+  description: "One prompt, many responses.",
+  icons: {
+    icon: "/icons/kokiri.svg"
+  }
 };
 
 export default function RootLayout({
@@ -13,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="en">
       <body className="h-screen w-screen antialiased">
         <NextThemesProvider>{children}</NextThemesProvider>
       </body>
