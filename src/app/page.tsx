@@ -4,10 +4,10 @@ import { Prompt } from "@/components/Prompt";
 
 export default function page() {
   return (
-    <>
+    <div className="h-full w-full space-y-4 p-4">
       <Header />
       <Outputs />
       <Prompt />
-    </>
+    </div>
   );
 }
