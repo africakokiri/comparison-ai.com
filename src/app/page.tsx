@@ -1,7 +1,13 @@
+import { Header } from "@/components/Header";
+import { Outputs } from "@/components/Outputs";
+import { Prompt } from "@/components/Prompt";
+
 export default function page() {
   return (
-    <div className="flex h-full w-full items-center justify-center">
-      Hello World
-    </div>
+    <>
+      <Header />
+      <Outputs />
+      <Prompt />
+    </>
   );
 }

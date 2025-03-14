@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="h-screen w-screen antialiased">
+      <body className="max-w-screen max-h-screen antialiased">
         <NextThemesProvider>{children}</NextThemesProvider>
       </body>
     </html>
