@@ -14,10 +14,11 @@ export const Prompt = () => {
   };
 
   return (
-    <div className="fixed bottom-4 flex w-full justify-center">
+    <div className="fixed bottom-8 flex w-full justify-center">
       <form
         onClick={handleButtonClick}
-        className="w-1/2 bg-white"
+        className="focus w-1/2 bg-white shadow-md transition-shadow
+hover:shadow-xl"
       >
         <div
           className="flex w-full items-center justify-between rounded-md
