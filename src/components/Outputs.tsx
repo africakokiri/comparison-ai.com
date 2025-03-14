@@ -2,7 +2,7 @@
 
 import { Roboto_Mono } from "next/font/google";
 import Image from "next/image";
-import { ReactNode } from "react";
+import { type ReactNode } from "react";
 
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
