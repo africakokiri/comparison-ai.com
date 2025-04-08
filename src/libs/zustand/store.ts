@@ -1,14 +1,16 @@
 import { create } from "zustand";
 
-interface PromptStore {
-  default: string[];
-  addPrompt: (prompt: string) => void;
+interface InteractionSTore {
+  interaction: {
+    prompt: string;
+    GPT: string;
+    GEMINI: string;
+    CLAUDE: string;
+  }[];
+  addInteraction: (prompt: string) => void;
 }
 
-export const usePromptStore = create<PromptStore>((set) => ({
-  default: [],
-  addPrompt: (prompt) =>
-    set((state) => ({
-      default: [...state.default, prompt]
-    }))
+export const useInteractionStore = create<InteractionSTore>((set) => ({
+  interaction: [],
+  addInteraction: (prompt) => {}
 }));
