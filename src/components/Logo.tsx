@@ -4,7 +4,7 @@ const robotoMonoVar = Roboto_Mono({ subsets: ["latin"] });
 
 export const Logo = () => {
   return (
-    <footer className="fixed bottom-12 right-8">
+    <footer className="bottom-12 right-8 hidden md:fixed md:block">
       <h1 className={`${robotoMonoVar.className} text-2xl font-light`}>
         Comparison-ai.com
       </h1>
