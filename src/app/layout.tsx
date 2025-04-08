@@ -4,7 +4,11 @@ import "@/styles/globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: ""
+  title: "Compare AI Models",
+  description: "Compare Ai Models",
+  icons: {
+    icon: "/icons/kokiri.svg"
+  }
 };
 
 export default function RootLayout({
@@ -14,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="h-screen w-screen antialiased">
+      <body className="antialiased">
         <NextThemesProvider>{children}</NextThemesProvider>
       </body>
     </html>
